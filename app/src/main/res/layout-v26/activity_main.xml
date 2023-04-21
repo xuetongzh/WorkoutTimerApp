@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="20dp"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:max="10"
+        android:progressDrawable="@drawable/progressbar"
+        android:textColor="#018786" />
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Work out hasn't start"
+        android:textColor="@color/teal_700"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/style_circle"
+        android:gravity="center"
+        android:text="0s"
+        android:textColor="@color/white"
+        android:textSize="32sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingHorizontal="50dp">
+
+        <EditText
+            android:id="@+id/workoutTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Please enter workout time(s)"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/restTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Please enter rest time of set(s)"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/timesSet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Please enter number of workout set"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/stateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:background="@color/teal_700"
+            android:text="Start"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/stopBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:background="@color/teal_700"
+            android:text="End"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+</RelativeLayout>
