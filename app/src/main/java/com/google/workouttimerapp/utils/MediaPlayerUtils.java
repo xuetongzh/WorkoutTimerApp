@@ -20,8 +20,8 @@ public class MediaPlayerUtils {
     }
 
     /**
-     * playSound such as MediaPlayerUtil.playSound(this, R.raw.verify_error_passenger);
-     * @param context 上下文
+     * playSound  For example MediaPlayerUtil.playSound(this, R.raw.verify_error_passenger);
+     * @param context
      */
     public static void playSound(Context context, int rawResId) {
         playSound(context, rawResId, null);
