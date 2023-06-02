@@ -7,7 +7,7 @@ import android.media.MediaPlayer.OnCompletionListener;
 import android.net.Uri;
 
 /**
- * 声音播放
+ * Play Sound
  */
 public class MediaPlayerUtils {
 
@@ -20,7 +20,7 @@ public class MediaPlayerUtils {
     }
 
     /**
-     * playSound 播放声音  例如 MediaPlayerUtil.playSound(this, R.raw.verify_error_passenger);//无效票
+     * playSound such as MediaPlayerUtil.playSound(this, R.raw.verify_error_passenger);
      * @param context 上下文
      */
     public static void playSound(Context context, int rawResId) {
@@ -133,7 +133,7 @@ public class MediaPlayerUtils {
         }
     }
 
-    // 继续
+    // Continue
     public static void resume() {
         if (mPlayer != null && isPause) {
             mPlayer.start();
